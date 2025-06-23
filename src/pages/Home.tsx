@@ -53,9 +53,6 @@ const Home = () => {
 Resurtech is on a mission to reduce electronic waste and restore hope—by collecting used or damaged gadgets, repairing what we can, recycling what we can’t, and placing technology in the hands of those who need it most.              </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                  <Link to="/donate">Donate a Laptop</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="border-secondary text-secondary hover:bg-secondary hover:text-white">
                   <Link to="/donate">Recycle Responsibly</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
