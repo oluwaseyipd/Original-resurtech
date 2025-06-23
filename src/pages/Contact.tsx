@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,6 +21,7 @@ const Contact = () => {
   });
 
   const { toast } = useToast();
+  const location = useLocation();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -162,7 +164,7 @@ const Contact = () => {
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-primary" />
-                    <p><a href="mailto:hello@resurtech.org" className="text-primary hover:underline">hello@resurtech.org</a></p>
+                    <p><a href="mailto:hello@resurtech.org" className="text-primary hover:underline">resurtechglobal@gmail.com</a></p>
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Office Hours</p>
@@ -178,16 +180,10 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex space-x-4">
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
+                    <a href="https://www.instagram.com/resurtech_global/ " target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
                       <Instagram className="h-6 w-6" />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
-                      <Twitter className="h-6 w-6" />
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
-                      <Linkedin className="h-6 w-6" />
-                    </a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
+                    <a href="https://www.facebook.com/resurtech_global/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
                       <Facebook className="h-6 w-6" />
                     </a>
                   </div>
@@ -198,11 +194,11 @@ const Contact = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-gray-900 mb-2">FAQ</h3>
                   <ul className="text-sm space-y-2">
-                    <li><a href="#" className="text-primary hover:underline">How do I donate a laptop?</a></li>
-                    <li><a href="#" className="text-primary hover:underline">What are your pickup areas?</a></li>
-                    <li><a href="#" className="text-primary hover:underline">How do you decide who receives laptops?</a></li>
-                    <li><a href="#" className="text-primary hover:underline">What happens to unusable devices?</a></li>
-                    <li><a href="#" className="text-primary hover:underline">View all FAQs →</a></li>
+                    <li><Link to="/faq" className="text-primary hover:underline">How do I donate a laptop?</Link></li>
+                    <li><Link to="/faq" className="text-primary hover:underline">What are your pickup areas?</Link></li>
+                    <li><Link to="/faq" className="text-primary hover:underline">How do you decide who receives laptops?</Link></li>
+                    <li><Link to="/faq" className="text-primary hover:underline">What happens to unusable devices?</Link></li>
+                    <li><Link to="/faq" className="text-primary hover:underline">View all FAQs →</Link></li>
                   </ul>
                 </CardContent>
               </Card>
@@ -211,13 +207,13 @@ const Contact = () => {
         </div>
         
         {/* Map or Image */}
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <img 
             src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&h=400&fit=crop" 
             alt="Resurtech team working with laptops"
             className="w-full h-64 object-cover rounded-2xl shadow-lg"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

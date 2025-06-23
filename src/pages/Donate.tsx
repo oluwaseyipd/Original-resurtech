@@ -18,7 +18,6 @@ const Donate = () => {
     address: "",
     city: "",
     state: "",
-    zipCode: "",
     deviceType: "",
     deviceCondition: "",
     deviceAge: "",
@@ -63,7 +62,6 @@ const Donate = () => {
       address: "",
       city: "",
       state: "",
-      zipCode: "",
       deviceType: "",
       deviceCondition: "",
       deviceAge: "",
@@ -109,8 +107,7 @@ const Donate = () => {
             Donate to <span className="text-primary">Resurtech</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your donation helps us refurbish laptops and bridge the digital divide. Every device and dollar makes a difference.
-          </p>
+Got a laptop you no longer use? Give it a second life and give someone a chance.          </p>
         </div>
 
         {/* Hero Image */}
@@ -187,7 +184,7 @@ const Donate = () => {
                           onChange={(e) => setDonationForm(prev => ({ ...prev, address: e.target.value }))}
                         />
                       </div>
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                           <Label htmlFor="city">City</Label>
                           <Input 
@@ -202,14 +199,6 @@ const Donate = () => {
                             id="state"
                             value={donationForm.state}
                             onChange={(e) => setDonationForm(prev => ({ ...prev, state: e.target.value }))}
-                          />
-                        </div>
-                        <div>
-                          <Label htmlFor="zipCode">ZIP Code</Label>
-                          <Input 
-                            id="zipCode"
-                            value={donationForm.zipCode}
-                            onChange={(e) => setDonationForm(prev => ({ ...prev, zipCode: e.target.value }))}
                           />
                         </div>
                       </div>
@@ -310,9 +299,6 @@ const Donate = () => {
                     <Button type="submit" size="lg" className="bg-primary hover:bg-primary/90 px-8">
                       Submit Donation Request
                     </Button>
-                    <p className="text-sm text-gray-600 mt-4">
-                      We'll contact you within 2-3 business days to arrange pickup or drop-off.
-                    </p>
                   </div>
                 </form>
               </CardContent>
@@ -407,7 +393,7 @@ const Donate = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                         <span className="text-white text-sm">$25</span>
                       </div>
                       <div>
@@ -417,7 +403,7 @@ const Donate = () => {
                     </div>
                     
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
                         <span className="text-white text-sm">$50</span>
                       </div>
                       <div>
@@ -427,7 +413,7 @@ const Donate = () => {
                     </div>
                     
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                         <span className="text-white text-sm">$100</span>
                       </div>
                       <div>
@@ -437,7 +423,7 @@ const Donate = () => {
                     </div>
                     
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
                         <span className="text-white text-sm">$250</span>
                       </div>
                       <div>

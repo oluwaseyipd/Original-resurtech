@@ -21,7 +21,6 @@ const Partner = () => {
     address: "",
     city: "",
     state: "",
-    zipCode: "",
     organizationSize: "",
     partnershipInterests: [] as string[],
     resources: [] as string[],
@@ -107,7 +106,6 @@ const Partner = () => {
       address: "",
       city: "",
       state: "",
-      zipCode: "",
       organizationSize: "",
       partnershipInterests: [],
       resources: [],
@@ -130,7 +128,7 @@ const Partner = () => {
         </div>
 
         {/* Partnership Benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <Card className="border-0 shadow-lg">
             <CardContent className="pt-6 text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -166,10 +164,10 @@ const Partner = () => {
               </p>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
 
         {/* Success Stories */}
-        <div className="mb-12 bg-white rounded-2xl p-8 shadow-lg">
+        {/* <div className="mb-12 bg-white rounded-2xl p-8 shadow-lg">
           <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">Partnership Success Stories</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -201,7 +199,7 @@ const Partner = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Partnership Application Form */}
         <Card className="border-0 shadow-lg">
@@ -326,7 +324,7 @@ const Partner = () => {
                       onChange={(e) => setFormData(prev => ({ ...prev, address: e.target.value }))}
                     />
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="city">City</Label>
                       <Input 
@@ -341,14 +339,6 @@ const Partner = () => {
                         id="state"
                         value={formData.state}
                         onChange={(e) => setFormData(prev => ({ ...prev, state: e.target.value }))}
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="zipCode">ZIP Code</Label>
-                      <Input 
-                        id="zipCode"
-                        value={formData.zipCode}
-                        onChange={(e) => setFormData(prev => ({ ...prev, zipCode: e.target.value }))}
                       />
                     </div>
                   </div>
@@ -449,9 +439,6 @@ const Partner = () => {
                 <Button type="submit" size="lg" className="bg-primary hover:bg-primary/90 px-8">
                   Submit Partnership Application
                 </Button>
-                <p className="text-sm text-gray-600 mt-4">
-                  We'll review your application and schedule a meeting within 5-7 business days to discuss collaboration opportunities.
-                </p>
               </div>
             </form>
           </CardContent>

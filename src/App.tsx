@@ -13,6 +13,7 @@ import Donate from "./pages/Donate";
 import Volunteer from "./pages/Volunteer";
 import Partner from "./pages/Partner";
 import Contact from "./pages/Contact";
+import Faq from "./pages/Faq";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/partner" element={<Partner />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/faq" element={<Faq />} />
           </Routes>
         </Layout>
       </BrowserRouter>

@@ -17,7 +17,6 @@ const Volunteer = () => {
     address: "",
     city: "",
     state: "",
-    zipCode: "",
     age: "",
     availability: "",
     skills: [] as string[],
@@ -26,8 +25,6 @@ const Volunteer = () => {
     motivation: "",
     additionalInfo: "",
     hasTransportation: "",
-    emergencyContact: "",
-    emergencyPhone: ""
   });
 
   const { toast } = useToast();
@@ -102,7 +99,6 @@ const Volunteer = () => {
       address: "",
       city: "",
       state: "",
-      zipCode: "",
       age: "",
       availability: "",
       skills: [],
@@ -111,8 +107,6 @@ const Volunteer = () => {
       motivation: "",
       additionalInfo: "",
       hasTransportation: "",
-      emergencyContact: "",
-      emergencyPhone: ""
     });
   };
 
@@ -137,7 +131,7 @@ const Volunteer = () => {
         </div>
 
         {/* Volunteer Benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <Card className="text-center p-6 border-0 shadow-lg">
             <CardContent className="pt-6">
               <div className="text-3xl mb-3">🛠️</div>
@@ -161,7 +155,7 @@ const Volunteer = () => {
               <p className="text-sm text-gray-600">Connect with like-minded people who care about technology and social good</p>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
 
         {/* Application Form */}
         <Card className="border-0 shadow-lg">
@@ -238,7 +232,7 @@ const Volunteer = () => {
                       onChange={(e) => setFormData(prev => ({ ...prev, address: e.target.value }))}
                     />
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="city">City</Label>
                       <Input 
@@ -253,14 +247,6 @@ const Volunteer = () => {
                         id="state"
                         value={formData.state}
                         onChange={(e) => setFormData(prev => ({ ...prev, state: e.target.value }))}
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="zipCode">ZIP Code</Label>
-                      <Input 
-                        id="zipCode"
-                        value={formData.zipCode}
-                        onChange={(e) => setFormData(prev => ({ ...prev, zipCode: e.target.value }))}
                       />
                     </div>
                   </div>
@@ -363,7 +349,7 @@ const Volunteer = () => {
               </div>
 
               {/* Emergency Contact */}
-              <div>
+              {/* <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Emergency Contact</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -384,7 +370,7 @@ const Volunteer = () => {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Additional Information */}
               <div>
@@ -403,9 +389,6 @@ const Volunteer = () => {
                 <Button type="submit" size="lg" className="bg-primary hover:bg-primary/90 px-8">
                   Submit Application
                 </Button>
-                <p className="text-sm text-gray-600 mt-4">
-                  We'll review your application and contact you within 3-5 business days for next steps, including background check and orientation details.
-                </p>
               </div>
             </form>
           </CardContent>

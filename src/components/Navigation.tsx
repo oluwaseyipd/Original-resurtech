@@ -32,7 +32,7 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <NavigationMenu>
               <NavigationMenuList>
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                   <Link 
                     to="/" 
                     className={`px-3 py-2 text-sm font-medium transition-colors hover:text-primary ${
@@ -41,7 +41,7 @@ const Navigation = () => {
                   >
                     Home
                   </Link>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
                 
                 <NavigationMenuItem>
                   <Link 
