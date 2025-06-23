@@ -58,7 +58,7 @@ const Footer = () => {
         <div className="border-t border-gray-200 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 text-sm">
-              © 2025 Resurtech. All rights reserved.
+              © {new Date().getFullYear()} Resurtech. All rights reserved.
             </p>
             
             {/* Social Links */}

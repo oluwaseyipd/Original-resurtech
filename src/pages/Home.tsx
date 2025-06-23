@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
+import CountUp from "react-countup";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -79,31 +80,37 @@ Resurtech is on a mission to reduce electronic waste and restore hope—by colle
             <p className="text-xl text-gray-600">Together, we're making a difference</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center p-8 border-0 shadow-lg">
-              <CardContent className="pt-6">
-                <div className="text-5xl mb-4">💻</div>
-                <div className="text-4xl font-bold text-primary mb-2">120+</div>
-                <p className="text-lg text-gray-600">Laptops Given</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center p-8 border-0 shadow-lg">
-              <CardContent className="pt-6">
-                <div className="text-5xl mb-4">🌱</div>
-                <div className="text-4xl font-bold text-secondary mb-2">2.1</div>
-                <p className="text-lg text-gray-600">Tons of eWaste Recycled</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center p-8 border-0 shadow-lg">
-              <CardContent className="pt-6">
-                <div className="text-5xl mb-4">❤️</div>
-                <div className="text-4xl font-bold text-primary mb-2">40+</div>
-                <p className="text-lg text-gray-600">Volunteers Joined</p>
-              </CardContent>
-            </Card>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <Card className="text-center p-8 border-0 shadow-lg">
+        <CardContent className="pt-6">
+          <div className="text-5xl mb-4">💻</div>
+          <div className="text-4xl font-bold text-primary mb-2">
+            <CountUp end={120} duration={4} suffix="+" />
           </div>
+          <p className="text-lg text-gray-600">Laptops Given</p>
+        </CardContent>
+      </Card>
+      
+      <Card className="text-center p-8 border-0 shadow-lg">
+        <CardContent className="pt-6">
+          <div className="text-5xl mb-4">🌱</div>
+          <div className="text-4xl font-bold text-secondary mb-2">
+            <CountUp end={2.1} decimals={1} duration={4} />
+          </div>
+          <p className="text-lg text-gray-600">Tons of eWaste Recycled</p>
+        </CardContent>
+      </Card>
+      
+      <Card className="text-center p-8 border-0 shadow-lg">
+        <CardContent className="pt-6">
+          <div className="text-5xl mb-4">❤️</div>
+          <div className="text-4xl font-bold text-primary mb-2">
+            <CountUp end={40} duration={4} suffix="+" />
+          </div>
+          <p className="text-lg text-gray-600">Volunteers Joined</p>
+        </CardContent>
+      </Card>
+    </div>
         </div>
       </section>
 
@@ -143,7 +150,7 @@ Resurtech is on a mission to reduce electronic waste and restore hope—by colle
         </div>
       </section>
    {/* Testimony Slider */}
-<section className="py-16 bg-gray-50">
+<section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Stories of Hope</h2>
