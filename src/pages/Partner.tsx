@@ -120,8 +120,8 @@ const Partner = () => {
     <div className="min-h-screen py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Partner with Resurtech</h1>
+        <div className="text-center mb-12"> 
+          <h1 className="text-4xl font-bold text-gray-900 mb-4"><span className="text-primary">Partner</span> with Resurtech</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join forces with us to amplify our impact. Together, we can reach more people in need and create lasting change in our communities.
           </p>

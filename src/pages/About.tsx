@@ -8,7 +8,7 @@ const About = () => {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            About <span className="text-primary">Resurtech</span>
+            <span className="text-primary">About</span> Resurtech
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We believe that technology should empower everyone, not create a digital divide. Our mission is to reduce electronic waste while providing access to technology for those who need it most.

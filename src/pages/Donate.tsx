@@ -104,7 +104,7 @@ const Donate = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Donate to <span className="text-primary">Resurtech</span>
+            <span className="text-primary">Donate</span> to Resurtech
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
 Got a laptop you no longer use? Give it a second life and give someone a chance.          </p>

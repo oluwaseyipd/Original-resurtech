@@ -115,7 +115,7 @@ const Volunteer = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Volunteer with Resurtech</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4"><span className="text-primary">Volunteer</span> with Resurtech</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join our community of volunteers who are passionate about bridging the digital divide and protecting the environment.
           </p>
