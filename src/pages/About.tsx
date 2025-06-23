@@ -16,7 +16,7 @@ const About = () => {
         </div>
 
         {/* Mission & Vision */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mb-16">
           <Card className="p-8 border-0 shadow-lg">
             <CardContent className="pt-6">
               <h2 className="text-2xl font-bold text-primary mb-4">Our Mission</h2>
